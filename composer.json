@@ -1,0 +1,28 @@
+{
+    "name": "herensi/weather",
+    "description": "A weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leif",
+            "email": "leif@herensi.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Herensi\\Weather\\": "./src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "~5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Herensi\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
